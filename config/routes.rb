@@ -1,4 +1,11 @@
 Colsha::Application.routes.draw do
+  devise_for :users,:path_names=>{:sign_up => "register",:sign_in => "login",:sign_out => "loginout" }
+ 
+  root :to=>'home#index'
+
+  get "home/index"
+  #get "/users/sign_out"=>"devise/sessions#destroy"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
