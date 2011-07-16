@@ -38,5 +38,6 @@ module Colsha
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    config.i18n.default_locale = "zh-cn"
   end
 end
